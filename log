@@ -1,0 +1,11 @@
+Fri Apr  8 16:01:13 UTC 2022: 
+ hashmap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:57:27: error: expected expression before ‘)’ token
+   mapa->buckets = (Pair**))malloc(sizeof(Pair*)*capacity);
+                           ^
+hashmap.c:57:27: error: expected statement before ‘)’ token
+Compilation failed
+225460c
