@@ -9,3 +9,9 @@ hashmap.c:57:27: error: expected expression before ‘)’ token
 hashmap.c:57:27: error: expected statement before ‘)’ token
 Compilation failed
 225460c
+Fri Apr  8 16:02:00 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+7771584
