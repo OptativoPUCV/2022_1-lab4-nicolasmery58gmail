@@ -77,7 +77,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  long primero;
+  Pair primero;
   for(long i; i < map->capacity; i++){
     if(map->buckets[i]!= NULL){
       map->current = i;

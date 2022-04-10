@@ -110,3 +110,24 @@ hashmap.c:88:10: error: return makes pointer from integer without a cast [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 b42e92f
+Sun Apr 10 23:51:20 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:73:8: error: unused variable ‘posi’ [-Werror=unused-variable]
+   long posi = hash(key, map->capacity);
+        ^~~~
+hashmap.c: In function ‘firstMap’:
+hashmap.c:84:15: error: incompatible types when assigning to type ‘Pair {aka struct Pair}’ from type ‘Pair * {aka struct Pair *}’
+       primero = map->buckets[i];
+               ^
+hashmap.c:88:10: error: incompatible types when returning type ‘Pair {aka struct Pair}’ but ‘Pair * {aka struct Pair *}’ was expected
+   return primero;
+          ^~~~~~~
+hashmap.c:89:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+c5313dd
