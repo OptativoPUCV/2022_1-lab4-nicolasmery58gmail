@@ -180,3 +180,14 @@ Sun Apr 10 23:53:46 UTC 2022:
  tests:  1|5
 total_score: 10/70
 340f74c
+Sun Apr 10 23:59:02 UTC 2022: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:92:35: error: comparison between pointer and integer [-Werror]
+   if (map == NULL || map->current == NULL) return NULL;
+                                   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+0a10453

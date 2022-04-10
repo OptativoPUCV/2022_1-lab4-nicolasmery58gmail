@@ -89,6 +89,8 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-    
-    return NULL;
+  if (map == NULL || map->current == NULL) return NULL;
+  map->buckets[map->current] = map->buckets[map->current+1];
+  return map->buckets[map->current];
+  
 }
