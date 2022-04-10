@@ -36,3 +36,17 @@ hashmap.c:87:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 50689c3
+Sun Apr 10 23:03:39 UTC 2022: 
+ hashmap.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:84:14: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       primero=map->buckets[i];
+              ^
+hashmap.c:88:10: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+   return primero;
+          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+647fc00
