@@ -154,3 +154,17 @@ Sun Apr 10 23:51:56 UTC 2022:
  tests:  1|5
 total_score: 10/70
 52d2a64
+Sun Apr 10 23:52:42 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:83:15: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       primero = map->buckets[i];
+               ^
+hashmap.c:87:10: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+   return primero;
+          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+77624f2
