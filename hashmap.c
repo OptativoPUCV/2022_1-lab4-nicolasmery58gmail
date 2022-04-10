@@ -76,6 +76,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
+  if (map == NULL) return NULL;
   Pair* primero;
   for(long i; i < map->capacity; i++){
     if(map->buckets[i] != NULL){
@@ -88,6 +89,6 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-  
+    
     return NULL;
 }
