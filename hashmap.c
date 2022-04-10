@@ -65,13 +65,14 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-
+  
 
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
-
-
+  long posi = hash(key, map->capacity);
+  
+  
     return NULL;
 }
 
@@ -88,6 +89,6 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-
+  
     return NULL;
 }

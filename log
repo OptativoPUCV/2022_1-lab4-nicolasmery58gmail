@@ -92,3 +92,21 @@ hashmap.c:87:10: error: return makes pointer from integer without a cast [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 7ff7702
+Sun Apr 10 23:50:24 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:73:8: error: unused variable ‘posi’ [-Werror=unused-variable]
+   long posi = hash(key, map->capacity);
+        ^~~~
+hashmap.c: In function ‘firstMap’:
+hashmap.c:84:15: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       primero = map->buckets[i];
+               ^
+hashmap.c:88:10: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+   return primero;
+          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b42e92f
