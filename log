@@ -302,3 +302,14 @@ Mon Apr 11 01:22:44 UTC 2022:
  tests:  3|5
 total_score: 10/70
 45f2a5d
+Mon Apr 11 02:32:53 UTC 2022: 
+ hashmap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:3: error: ‘posicion’ undeclared (first use in this function)
+   posicion = hash(key, map->capacity);
+   ^~~~~~~~
+hashmap.c:43:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4f055db
