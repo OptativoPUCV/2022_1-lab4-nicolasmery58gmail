@@ -44,10 +44,9 @@ void insertMap(HashMap * map, char * key, void * value) {
   long posicion = hash(m->key, map->capacity);
   map->current = posicion;
   while(map->buckets[posicion]!=NULL){
+    posicion++;
     if (posicion == map->capacity){
       posicion = 0;
-    }else{
-      posicion++;
     }
   }
   map->buckets[posicion] = m;
