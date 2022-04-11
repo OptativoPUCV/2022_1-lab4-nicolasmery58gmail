@@ -50,7 +50,7 @@ void insertMap(HashMap * map, char * key, void * value) {
       posicion++;
     }
   }
-  map->buckets[posicion] == m;
+  map->buckets[posicion] = m;
   map->size++;
 
 }
