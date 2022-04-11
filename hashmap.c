@@ -80,7 +80,7 @@ Pair * firstMap(HashMap * map) {
   
   while(map->buckets[aux] == NULL || map->buckets[aux]->key == NULL){
     
-    aux = (aux+1)%map->current;
+    aux = (aux+1)%map->capacity;
   }
   map->current = aux;
   return map->buckets[aux];
