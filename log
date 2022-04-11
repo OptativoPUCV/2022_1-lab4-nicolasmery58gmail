@@ -364,3 +364,16 @@ hashmap.c:43:10: error: unused variable ‘m’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e72a701
+Mon Apr 11 02:46:46 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:20: error: invalid operands to binary != (have ‘Pair {aka struct Pair}’ and ‘void *’)
+   while(m[posicion]!=NULL || m[posicion]->key!=NULL){
+         ~~~~~~~~~~~^~
+hashmap.c:45:41: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+   while(m[posicion]!=NULL || m[posicion]->key!=NULL){
+                                         ^~
+Compilation failed
+664bb0f
