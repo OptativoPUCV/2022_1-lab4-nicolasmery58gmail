@@ -377,3 +377,14 @@ hashmap.c:45:41: error: invalid type argument of ‘->’ (have ‘Pair {aka str
                                          ^~
 Compilation failed
 664bb0f
+Mon Apr 11 02:47:53 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:15: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Pair ** m = createPair(key, value);
+               ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+41c0d46
