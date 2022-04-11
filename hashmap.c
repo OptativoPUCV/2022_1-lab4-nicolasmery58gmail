@@ -89,14 +89,15 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  long aux = 0;
-  
-  while(map->buckets[aux] == NULL || map->buckets[aux]->key == NULL){
-    
-    aux = (aux+1)%map->capacity;
+  for(long i = 0; i<map->capacity; i++){
+    if (map->buckets[i] != NULL){
+      if(map->buckets[i]->key != NULL){
+        map->current=i;
+        return map->buckets[i];
+      }
+    }
   }
-  map->current = aux;
-  return map->buckets[aux];
+  return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
