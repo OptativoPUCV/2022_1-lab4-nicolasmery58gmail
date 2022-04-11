@@ -43,7 +43,7 @@ void insertMap(HashMap * map, char * key, void * value) {
   Pair * m = createPair(key, value);
   long posicion = hash(key, map->capacity);
   map->current = posicion;
-  while(m[posicion]!=NULL || m[posicion]->key!=NULL){
+  while(m[posicion]!=NULL){
     if (posicion == map->capacity){
       posicion = 0;
     }else{
