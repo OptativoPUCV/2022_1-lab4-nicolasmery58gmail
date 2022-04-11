@@ -350,3 +350,17 @@ hashmap.c:43:10: error: unused variable ‘m’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 bb58b4d
+Mon Apr 11 02:45:42 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:14: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Pair** m = createPair(key, value);
+              ^~~~~~~~~~
+hashmap.c:43:10: error: unused variable ‘m’ [-Werror=unused-variable]
+   Pair** m = createPair(key, value);
+          ^
+cc1: all warnings being treated as errors
+Compilation failed
+e72a701
