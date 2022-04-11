@@ -318,3 +318,14 @@ Mon Apr 11 02:33:10 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b4c9000
+Mon Apr 11 02:35:17 UTC 2022: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+     if (posicion = map->capacity-1){
+         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+83a0b5e
