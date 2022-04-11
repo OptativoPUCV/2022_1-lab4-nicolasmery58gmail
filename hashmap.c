@@ -78,7 +78,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
   long aux = 0;
   
-  while(map->buckets[aux] == NULL || map->buckets[aux]->key){
+  while(map->buckets[aux] == NULL || map->buckets[aux]->key == NULL){
     
     aux = (aux+1)%map->current;
   }
