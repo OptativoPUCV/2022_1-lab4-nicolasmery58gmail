@@ -76,16 +76,14 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  if (map == NULL) return NULL;
-  Pair* primero;
-  for(long i; i < map->capacity; i++){
-    if(map->buckets[i] != NULL){
-      map->current = i;
-      primero = map->buckets[i];
-      break;
-    }
+  long aux = 0;
+  
+  while(map->buckets[aux] == NULL){
+    
+    aux = (aux+1)%map->current;
   }
-  return primero;
+  map->current = aux;
+  return map->buckets[aux];
 }
 
 Pair * nextMap(HashMap * map) {
