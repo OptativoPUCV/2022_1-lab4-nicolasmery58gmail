@@ -243,3 +243,18 @@ Mon Apr 11 00:36:06 UTC 2022:
  tests:  3|5
 total_score: 10/70
 cb229b0
+Mon Apr 11 01:20:09 UTC 2022: 
+ hashmap.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:74:26: error: statement with no effect [-Werror=unused-value]
+   map->buckets[pos]->key == NULL;
+                          ^
+hashmap.c: In function ‘searchMap’:
+hashmap.c:78:8: error: unused variable ‘pos’ [-Werror=unused-variable]
+   long pos = hash(key, map->capacity);
+        ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d661c79
