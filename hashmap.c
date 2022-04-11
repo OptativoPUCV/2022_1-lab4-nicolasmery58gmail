@@ -94,5 +94,5 @@ Pair * nextMap(HashMap * map) {
     aux = (aux+1)%map->capacity;
   }
   map->current = aux;
-  return map->buckets[aux]->value;
+  return map->buckets[aux];
 }
