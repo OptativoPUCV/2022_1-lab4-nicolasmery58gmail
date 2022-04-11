@@ -87,8 +87,11 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-
-  map->buckets[map->current] = map->buckets[map->current+1];
-  return map->buckets[map->current];
-  
+  long aux = map->current;
+  while(map->buckets[aux] == NULL || map->buckets[aux]->key == NULL){
+    
+    aux = (aux+1)%map->capacity;
+  }
+  map->current = aux;
+  return map->buckets[aux];
 }
