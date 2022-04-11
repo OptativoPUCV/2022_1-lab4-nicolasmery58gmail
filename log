@@ -553,3 +553,15 @@ Mon Apr 11 03:10:23 UTC 2022:
  tests:  9|4
 total_score: 30/70
 c6f28eb
+Mon Apr 11 03:18:59 UTC 2022: 
+ hashmap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:80:24: error: ‘maps’ undeclared (first use in this function); did you mean ‘map’?
+   while((is_equal(key, maps->buckets[posicion]->key)) == 0){
+                        ^~~~
+                        map
+hashmap.c:80:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+76f3c34
