@@ -313,3 +313,8 @@ hashmap.c:43:3: error: ‘posicion’ undeclared (first use in this function)
 hashmap.c:43:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4f055db
+Mon Apr 11 02:33:10 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b4c9000
