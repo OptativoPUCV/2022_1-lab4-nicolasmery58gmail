@@ -580,3 +580,15 @@ Mon Apr 11 03:30:36 UTC 2022:
  1 file changed, 13 insertions(+)
  tests:  0|0
 08a2497
+Mon Apr 11 03:34:30 UTC 2022: 
+ hashmap.c | 14 +++++---------
+ 1 file changed, 5 insertions(+), 9 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:85:7: error: ‘size’ undeclared (first use in this function); did you mean ‘sinl’?
+       size--;
+       ^~~~
+       sinl
+hashmap.c:85:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+097e1b0
