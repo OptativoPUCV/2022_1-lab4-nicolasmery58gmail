@@ -565,3 +565,8 @@ hashmap.c:80:24: error: ‘maps’ undeclared (first use in this function); did 
 hashmap.c:80:24: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 76f3c34
+Mon Apr 11 03:19:12 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+fb25169
