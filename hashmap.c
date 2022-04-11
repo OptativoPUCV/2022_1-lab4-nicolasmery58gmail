@@ -100,11 +100,14 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-  long aux = map->current;
-  while(map->buckets[aux] == NULL || map->buckets[aux]->key == NULL){
+  long aux = map->current+1;
+  for(long i = aux; i < map->capacity; i++){
     
-    aux = (aux+1)%map->capacity;
-  }
-  map->current = aux;
-  return map->buckets[aux];
+    if (map->buckets[i] !=  NULL){
+      if(map->buckets[i]->key != NULL){
+        map->current=i;
+        return map->buckets[i];
+      }
+    }
+  return NULL;
 }
